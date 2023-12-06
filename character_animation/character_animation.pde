@@ -15,6 +15,8 @@ void setup(){
   
   coin = new Coin();
   
+  
+  
   character = new Hero();
 }
 
