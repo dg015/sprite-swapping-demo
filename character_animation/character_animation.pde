@@ -5,7 +5,7 @@
 //coin audio from https://pixabay.com/sound-effects/coin-c-02-102844/
 
 PImage map;
-PImage spinner;
+PImage[] spinner;
 
 Coin coin;
 Hero character;
@@ -15,7 +15,7 @@ void setup(){
   map = loadImage("sample_map.png");
   
   coin = new Coin();
-  
+  spinner = getImages();
   character = new Hero();
 }
 
