@@ -20,6 +20,7 @@ class Hero {
     PVector movement = velocity.copy();
     movement.setMag(speed); //setMag does .normalize() and then .mult(speed) :-)
     position.add(movement);
+    
   }
 
   void display() {

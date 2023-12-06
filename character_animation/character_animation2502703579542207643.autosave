@@ -7,10 +7,7 @@
 //coin audio from https://pixabay.com/sound-effects/coin-c-02-102844/
 
 PImage map;
-
 import processing.sound.*;
-SoundFile pickup;
-
 
 Coin coin;
 Hero character;
@@ -19,18 +16,11 @@ void setup() {
   size(400, 400);
   map = loadImage("sample_map.png");
 
-  getSound();
-
   coin = new Coin();
 
   character = new Hero();
 }
 
-
-void getSound()
-{
-  pickup = new SoundFile(this, "coin_c_02-102844.wav");
-}
 void draw() {
   image(map, 0, 0, map.width * 2, map.height * 2);
 
